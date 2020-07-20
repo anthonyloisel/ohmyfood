@@ -80,7 +80,7 @@
     justify-content: space-between;
 }
 @mixin mobile-only {
-    @media (max-width: 799px) {
+    @media (max-width: 850px) {
         @content;
     }
 }
