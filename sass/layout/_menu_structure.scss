@@ -1,0 +1,84 @@
+.menu_struct{
+    width: 800px;
+    height: 1200px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    @include box-shadow;
+}
+.section{
+    color: $colortitle;
+    @include menu_space;
+}
+.starter{
+    @include menu_full;
+
+    &__dish_price{
+        margin-right: 100px;
+    }
+
+    &__dish_name{
+        margin-left: 100px;   
+    }
+
+    &__title{
+        text-align: center;
+    }
+}
+
+.dish{
+    @include menu_full;
+
+    &__title{
+        text-align: center;
+    }
+}
+.dessert{
+    @include menu_full;
+
+    &__title{
+        text-align: center;
+    } 
+}
+.dishfont{
+    font-family: 'Kalam-Light';
+    font-size: 1.1em;
+
+    &--menu2{
+        font-family: 'SourceSerifPro-Regular';
+    }
+}
+.sidebar{
+    @include sidebar;
+
+    &__title{
+      
+    }
+    &__left{
+        text-align: right;
+         width: 244px;
+    }
+    &__right{
+        width: 244px;
+    }
+}
+.underline{
+    position: relative;
+
+    &::after{
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        position: absolute;
+        background: $black;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    &:hover::after{
+        width: 100%; 
+        left: 0; 
+    }
+}

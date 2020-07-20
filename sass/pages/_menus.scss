@@ -1,0 +1,86 @@
+.menu{
+    font-size: 1.2em;
+}
+.menulogo{
+    @include gradient_menu1;
+}
+.menutitle{
+    font-family: 'Devonshire', cursive;
+    color: $colortitle;
+
+    &--menu1{
+        font-family: 'philosopherregular';
+        @include gradient_menu2;
+    }
+    &--menu2{
+        font-family: 'black_jackregular';
+       @include gradient_menu3;
+    }
+    &--menu3{
+        font-family: 'Paprika-Regular';
+        @include gradient_menu4;
+    }
+}
+a {
+    color:inherit;
+    text-decoration: none;
+   }
+.menus{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+    
+    @include mobile-only{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+}
+
+.menu-prev{  
+    @include menusize;
+    transform: scale(1);
+    align-items: center;
+    text-align: center;
+    @include box-shadow;   
+    background-color: $bg;
+    @include hover;
+
+    @include mobile-only{
+        margin-top: 50px;
+        align-self: center;
+    }
+    
+    &__scale{
+        width: 100%;
+        height: 100%;
+        @include scale;
+    }
+
+    &__heading{
+        font-family: 'dustismo_italic', Arial, serif;
+        color: $colortitle;
+            &--menu1{
+                font-family: 'scheherazadebold';
+                color: $colortitle1;
+            }
+            &--menu2{
+                font-family: 'Paprika-Regular';
+                color: $colortitle2;
+            }
+            &--menu3{
+                font-family: 'Paprika-Regular';
+                color: $colortitle3;
+            }
+    }
+        
+        &--1{
+            background-color: $bg1;
+        }
+        &--2{
+            background-color: $bg2;
+        }
+        &--3{
+            background-color: $bg3;
+        }
+}

@@ -1,0 +1,22 @@
+.menu_full3{
+    background-color: $bg3;
+
+    &__title{
+        @include gradient_menu3;
+        font-family: 'black_jackregular';
+        font-size: 3em;
+        text-align: center;
+    }
+}
+.startermenu3{
+    @include menu_full;
+    color: $black;
+}
+.dishmenu3{
+    @include menu_full;
+    color: $black;
+}
+.dessertmenu3{
+    @include menu_full;
+    color: $black;
+}

@@ -1,0 +1,29 @@
+.footer {
+    background: $primary-color;
+    position: sticky;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile-only{
+        flex-direction: column;
+        height: 160px;
+    }
+
+    &__title{
+        font-family: 'sinkin_sans600_semibold';
+        color: $secondary-color;
+        margin-left: 50px;
+        margin-right: 50px;    
+
+        @include mobile-only{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}

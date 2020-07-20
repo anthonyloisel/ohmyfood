@@ -1,0 +1,15 @@
+.header {
+    background: $primary-color;
+    height: 100px;
+    width: 100%;
+    display: table;
+
+    &__title{
+        font-family: 'selawksb';
+        font-size: 3.5em;
+        color: $secondary-color;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,22 @@
+.menu_full4{
+    background-color: $bg1;
+
+    &__title{
+        @include gradient_menu4;
+        font-family: 'Paprika-Regular';
+        font-size: 3em;
+        text-align: center;
+    }
+}
+.startermenu4{
+    @include menu_full;
+    color: $black;
+}
+.dishmenu4{
+    @include menu_full;
+    color: $black;
+}
+.dessertmenu4{
+    @include menu_full;
+    color: $black;
+}

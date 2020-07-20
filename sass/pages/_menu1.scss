@@ -1,0 +1,34 @@
+.main_title{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+}
+.menu_full{
+    background-color: $bg; 
+
+    &__title{
+        color: $colortitle;
+        font-family: 'Devonshire', cursive;
+        font-size: 3em;
+        text-align: center;
+    }    
+}
+.logo{
+    width: 48px;
+    margin: 0 auto;
+    @include gradient_menu1;
+    text-align: center;
+}
+.section_footer{
+    @include menu_full;
+    justify-content: center;
+
+    &__logo{
+        margin-right: 15px;
+       @include gradient_menu1;
+    }
+    &__title{
+        font-family: 'Devonshire', cursive;
+        margin-left: 15px;
+    }
+}

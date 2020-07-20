@@ -1,0 +1,22 @@
+.menu_full2{
+    background-color: $bg1;
+
+    &__title{
+        @include gradient_menu2;
+        font-family: 'philosopherregular';
+        font-size: 3em;
+        text-align: center;
+    }
+}
+.startermenu2{
+    @include menu_full;
+    color: $startermenu2;
+}
+.dishmenu2{
+    @include menu_full;
+    color: $dishmenu2;
+}
+.dessertmenu2{
+    @include menu_full;
+    color: $dessertmenu2;
+}
